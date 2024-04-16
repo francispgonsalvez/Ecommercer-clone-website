@@ -1,0 +1,79 @@
+.produtcPage {
+    margin-top: 20px;
+}
+
+.productHeading {
+    margin-bottom: 20px;
+}
+
+.productHeading h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+.ProductSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.CardHeader {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    background-color: #f5f5f5;
+    text-align: left;
+    padding: 12px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+}
+
+tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.AdminOrderTable i {
+    color: #1a8754;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.AdminOrderTable i:hover {
+    color: #156b48;
+}
+
+.AdminOrderStatus {
+    background-color: #1a8754;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.AdminOrderStatus.pending {
+    background-color: #ff9800;
+}
+
+.AdminOrderStatus.completed {
+    background-color: #4caf50;
+}
+
+.AdminOrderStatus.cancelled {
+    background-color: #f44336;
+}

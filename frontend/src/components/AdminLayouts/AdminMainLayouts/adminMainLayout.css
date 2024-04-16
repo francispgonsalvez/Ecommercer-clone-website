@@ -1,0 +1,59 @@
+.MainPage {
+    background-color: #f8f9fa; /* Set a light background color */
+}
+
+.container {
+    max-width: 1200px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+.Main_Heading {
+    padding: 20px 0; /* Add padding to the header */
+}
+
+.pageContent {
+    display: flex;
+    justify-content: space-between; /* Distribute content evenly */
+}
+
+.adminSideBar {
+    flex: 0 0 250px; /* Set sidebar width */
+    background-color: #343a40; /* Dark sidebar background color */
+    color: #fff; /* Text color */
+    padding-top: 20px;
+}
+
+.tableBody {
+    flex: 1;
+    padding: 20px; /* Add padding */
+    background-color: #fff; /* White content background */
+    border-radius: 5px; /* Add some border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Styling for active sidebar item */
+.sidebarItem {
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sidebarItem:hover,
+.sidebarItem.active {
+    background-color: #454d55; /* Darken background on hover or when active */
+}
+
+.sidebarItem.active {
+    font-weight: bold; /* Bolden text for active item */
+}
+
+/* Additional styling for sidebar links */
+.sidebarLink {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sidebarLink:hover {
+    color: #666565; /* Lighten text color on hover */
+}

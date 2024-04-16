@@ -1,0 +1,38 @@
+.sideBarSection {
+    padding: 20px 25px 0 15px;
+}
+
+.sideBarSection ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sideBarSection li {
+    list-style-type: none;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sideBarSection li:hover {
+    background-color: #f0f0f0; /* Lighten background on hover */
+}
+
+.LogoutBtn {
+    border: none;
+    background: none;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.LogoutBtn:hover {
+    background-color: #f0f0f0; /* Lighten background on hover */
+}

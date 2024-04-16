@@ -1,0 +1,80 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Darken the overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Increased shadow */
+    text-align: center;
+    max-width: 400px; /* Limit width for better readability */
+}
+
+.tick-container {
+    margin-bottom: 30px;
+}
+
+.tick-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #2ecc71;
+    position: relative;
+    animation: tick-animation 0.6s ease-in-out forwards;
+}
+
+.tick-icon span {
+    position: absolute;
+    top: 28px;
+    font-size: 48px; /* Larger font size */
+    left: 28px;
+    color:  #2ecc71;
+    font-weight: 600; /* Bolder font weight */
+}
+
+@keyframes tick-animation {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button {
+    background-color: #2ecc71; /* Green button color */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #27ae60; /* Darker green on hover */
+}
+
+button i {
+    margin-left: 5px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #333; /* Dark text color */
+}
+
+p {
+    color: #666; /* Lighter text color */
+    margin-bottom: 20px;
+}

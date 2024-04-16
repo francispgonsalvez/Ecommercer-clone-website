@@ -1,0 +1,11 @@
+.NoProduct{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 11px;
+}
+.productPage{
+    padding: 20px;
+}

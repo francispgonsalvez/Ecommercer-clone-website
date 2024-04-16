@@ -1,0 +1,106 @@
+.MainPage {
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .MainHeading {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .userOrders {
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  .userOrderHeading h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .userOrderSection {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .userOrderHead {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .userOrderHead h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .userOrderHead span {
+    color: #555;
+  }
+  
+  .userOrderContent {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .userOrderTable {
+    flex: 1;
+  }
+  
+  .userOrderTable table {
+    width: 100%;
+  }
+  
+  .userOrderTable th,
+  .userOrderTable td {
+    padding: 10px 0;
+  }
+  
+  .userOrderProductImg {
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 5px;
+  }
+  
+  .userOrderImg h4 {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .total {
+    font-weight: bold;
+  }
+  
+  .orderedProductTotal {
+    margin-left: auto;
+    font-weight: bold;
+  }
+  
+  .userOrderInfo {
+    flex: 1;
+  }
+  
+  .usershippingAddress {
+    padding: 20px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .usershippingAddress h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .usershippingAddress span {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  

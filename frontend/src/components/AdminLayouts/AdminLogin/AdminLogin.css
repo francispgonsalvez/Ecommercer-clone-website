@@ -1,0 +1,58 @@
+.inputBox{
+  height: 32px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 0 5px;
+}
+.error {
+  color: red;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.btn {
+  padding: 14px 18px;
+  background-color: #1f1fda;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.btn.add {
+  padding: 14px 29px;
+}
+.loginFormSection{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginHeading{
+  display: flex;
+  justify-content: center;
+}
+.loginFromContent {
+  width: 500px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, .075) !important;
+  background-color: #fff;
+  padding: 19px 15px 8px;
+  border-radius: 15px;
+}
+.FormContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 11px 21px;
+}
+.FormContent h3{
+  font-size: 25px;
+}
+.formSubmit {
+  display: flex;
+  
+}

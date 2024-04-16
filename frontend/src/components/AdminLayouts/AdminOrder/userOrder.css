@@ -1,0 +1,78 @@
+.orderSection{
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, .075) !important;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.25rem;
+}
+.orderHeader{
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #4fa607;
+}
+.ordersDetails{
+    padding: 20px;
+}
+.orderSubHead{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.orderDate{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.userOrderDetails{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 45px;
+}
+.orderinfo{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    align-items: flex-start;
+}
+.customerInfoIcon{
+    padding: 15px 18px;
+    background-color: #d1e7de;
+    border-radius: 50%;
+    color: #1a8754;
+}
+.orderInfoIcon{
+    padding: 15px 16px;
+    background-color: #d1e7de;
+    border-radius: 50%;
+    color: #1a8754;
+}
+.orderInfoContent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.orderDetailsTable{
+    display: grid;
+}
+.shippingAddress{
+    display: flex;
+    flex-direction: column;
+}
+.orderedProductTotal{
+    text-align: end;
+    padding: 25px 35px;
+}
+.orderedProductTotal span{
+    border-bottom: 1px solid ;
+    padding: 5px;
+}
+.productImg {
+    max-width: 70px;
+    max-height: 50px;
+}
+.productBox{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
