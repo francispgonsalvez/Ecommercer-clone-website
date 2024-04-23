@@ -1,0 +1,28 @@
+.productsDetails{
+    min-height: 100vh;
+    display: flex;
+    padding: 20px;
+}
+.productsSection {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+.productsContentSection{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.productsImages img{
+    width: 150px;
+    height: 96px;
+}
+.productsImg img{
+    width: 150px;
+    height: 150px;
+}
+.productsImages{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

@@ -4,7 +4,6 @@ import { getAllCarts, retrieveCheckoutSession } from '../../../redux/slice/UserS
 import { useLocation } from 'react-router-dom';
 import UserHeader from '../Commen/UserHeader';
 import "./orderDetails.css";
-import easyinvoice from 'easyinvoice';
 import Cookies from 'js-cookie';
 
 
@@ -45,59 +44,6 @@ function OrderDetails() {
 
     fetchData();
   }, [dispatch, id, cartItems, userId]);
-
-
-  const handleDownloadInvoice = async () => {
-    const items = cartItems[0].items.map(item => ({
-      quantity: item.quantity,
-      description: item.productDetails.name,
-      tax: 0,
-      price: item.productDetails.price,
-    }));
-
-    let invoiceDate = 'Invoice Date';
-    if (orderDetails.session.created) {
-      const createdDate = new Date(orderDetails.session.created * 1000);
-      invoiceDate = `${createdDate.getMonth() + 1}/${createdDate.getDate()}/${createdDate.getFullYear()}`;
-    }
-
-    const data = {
-      documentTitle: 'INVOICE',
-      currency: orderDetails.session.currency || 'USD',
-      taxNotation: 'vat',
-      marginTop: 25,
-      marginRight: 25,
-      marginLeft: 25,
-      marginBottom: 25,
-      sender: {
-        company: 'Amazon.in',
-        address: 'Amazon',
-        zip: '671321',
-        city: 'mumbai',
-        country: 'india',
-      },
-      client: {
-        company: orderDetails.session.customer_details.name || 'Customer Name',
-        address: orderDetails.session.customer_details.email || 'Customer Email',
-        zip: orderDetails.session.customer_details.address.postal_code || 'Customer Postal Code',
-        city: orderDetails.session.customer_details.address.city || 'Customer City',
-        country: orderDetails.session.customer_details.address.country || 'Customer Country',
-      },
-      invoiceNumber: orderDetails.session.id || 'Invoice Number',
-      information: {
-        date: invoiceDate,
-      },
-      products: items,
-      bottomNotice: 'Thank you for shopping with us. For any inquiries, please contact support@customer.com.',
-    };
-
-    try {
-      const result = await easyinvoice.createInvoice(data);
-      easyinvoice.download(`invoice.pdf`, result.pdf);
-    } catch (error) {
-      console.error('Error creating or downloading the invoice:', error);
-    }
-  };
 
 
   return (
@@ -171,8 +117,7 @@ function OrderDetails() {
                   </div>
                 </div>
               </div>
-              <div className='orderSummaryInvoice'><button onClick={handleDownloadInvoice}>Download Invoice</button></div>
-            </div>
+             </div>
           </div>
         </div>
       </div>

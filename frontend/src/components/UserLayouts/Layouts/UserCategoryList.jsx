@@ -55,7 +55,6 @@ const UserCategoryList = () => {
                 </div>
                 <div className="cardContent">
                   <h3>{product.name}</h3>
-                  <p>{product.description}</p>
                   <div className="price">${product.price}</div>
 
                   <div className="productAction">

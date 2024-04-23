@@ -100,7 +100,10 @@ const productSlice = createSlice({
         // product Id fetching
         .addCase(getProductById.fulfilled, (state, action) => {
             state.loading = false;
-            state.productById = action.payload.product;
+            state.productById = action.payload;
+        })
+        .addCase(getProductById.pending, (state, action) => {
+           state.loading = true;
         })
 
         // update product

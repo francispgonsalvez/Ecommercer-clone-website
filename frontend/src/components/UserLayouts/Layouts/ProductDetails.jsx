@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import UserHeader from '../Commen/UserHeader';
-import './productDetails.css';
-import { useLocation, useNavigate } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
-import { getProductById } from '../../../redux/slice/ProductSlice';
-import { addToCart } from '../../../redux/slice/UserSlice';
-import Cookies from 'js-cookie';
+import React, { useEffect, useState } from 'react'
+import UserHeader from '../Commen/UserHeader'
+import './productDetails.css'
+import { useLocation, useNavigate } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { getProductById } from '../../../redux/slice/ProductSlice'
+import { addToCart } from '../../../redux/slice/UserSlice'
+import Cookies from 'js-cookie'
 
-const ProductDetails = () => {
+const UserProductDetails = () => {
     const { productById } = useSelector((state) => state.product);
     console.log(productById);
     const location = useLocation();
@@ -80,4 +80,4 @@ const ProductDetails = () => {
     )
 }
 
-export default ProductDetails
+export default UserProductDetails

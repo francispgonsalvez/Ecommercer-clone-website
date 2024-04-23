@@ -58,7 +58,7 @@ const createProduct = async (name, description, price, quantity, category, image
 
 
 // get Product by id
-const getProductById = async (productId) => {
+const getById = async (productId) => {
     return await Product.findById(productId);
 };
 
@@ -115,7 +115,7 @@ const deleteProduct = async (productId) => {
 module.exports = {
     getProducts,
     createProduct,
-    getProductById,
+    getById,
     updateProduct,
     deleteProduct
 };

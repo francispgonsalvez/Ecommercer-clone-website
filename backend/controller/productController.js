@@ -31,7 +31,7 @@ const createProduct = asyncHandler(async (req, res) => {
 // get ProductById
 const getProduct = asyncHandler(async (req, res) => {
     const productId = req.params.id;
-    const product = await productService.getProductById(productId);
+    const product = await productService.getById(productId);
     if (!product) {
         res.status(404);
         throw new Error('Product not found');
